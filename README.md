@@ -1,6 +1,6 @@
 # 拥抱未来的CSS布局方式：flex与grid布局
 
-本系列文章为对`CSS`中`flex`布局与`grid`布局的详细介绍，已在github同步更新，如您在阅读过程中发现描述有误或错别字的情况，您可以向[本项目](https://github.com/xingbofeng/css-grid-flex)提出`issus`或`Pull Request`。
+本系列文章为对`CSS`中`flex`布局与`grid`布局的详细介绍，已在[GitHub](https://github.com/xingbofeng/css-grid-flex)同步更新，如您在阅读过程中发现描述有误或错别字的情况，您可以向[本项目](https://github.com/xingbofeng/css-grid-flex)提出`issus`或`Pull Request`。
 
 本系列文章为我在深入研究CSS的布局方式的过程中的一些总结。主要是对于CSS3标准里的`flex`布局方式CSS4草案中的`grid`布局方式进行一些总结。
 
@@ -14,6 +14,9 @@ git clone https://github.com/xingbofeng/css-grid-flex.git
 我们通过`display`、`float`、`position`布局页面。
 
 传统页面布局过于繁琐，代码冗余，一些功能不易于简单实现：例如垂直居中、等分宽高等。
+
+关于更多`flex`与`grid`的思考，可以前往[前端未来页面布局发展方向是Flexbox 还是Grid？ - 前端开发- 知乎](https://www.zhihu.com/question/28691822)进行探讨。
+
 ## 为什么是“拥抱未来”？
 `flex`布局又称`弹性盒子`布局，它于2009年提出，并已经进入CSS3标准。现今虽已得到众高端浏览器厂商的支持，但由于IE10以下的用户基数仍然很大，大部分Web开发者并不能够真正在某种程度上大胆尝试这种新型布局理念。
 

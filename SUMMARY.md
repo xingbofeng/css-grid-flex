@@ -2,7 +2,7 @@
 
 * [blog](http://www.angryzhangzhe.cn)
 * [github地址](https://github.com/xingbofeng/css-grid-flex)
-* [简介](README.md)
+* [拥抱未来的CSS布局方式](README.md)
 * [轴线与网格](line-box.md)
 * [flex](flex/README.md)
     * [flex基础语法介绍](flex/baseflex.md)

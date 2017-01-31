@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<head>
+		<title>task10</title>
+		<style>
+			.box div{
+				width: 150px;
+				padding: 20px;
+			}
+			.box1 {
+				height: 120px;
+				background-color: red;
+			}
+			.box2 {
+				height: 100px;
+				background-color: blue;
+			}
+			.box3 {
+				height: 40px;
+				background-color: pink;
+			}
+			.box4 {
+				height: 200px;
+				background-color: yellow;
+			}
+			@media (min-width: 640px) {
+				.box {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+				}
+			}
+			@media (max-width: 640px) {
+				.box {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-start;
+					justify-content: space-between;
+					flex-wrap: wrap;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+			<div class="box4"></div>
+		</div>
+	</body>
+</html>

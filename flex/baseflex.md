@@ -166,7 +166,7 @@
     flex-basis: <length> | auto; /* default auto */
 }
 ```
-利用`flex-basis`，我们可以很容易实现页面布局中的常见问题：[两栏/三栏布局](../demo/demo1.html)。
+利用`flex-basis`，我们可以很容易实现页面布局中的常见问题：[两栏/三栏布局](http://www.xingbofeng.com/css-grid-flex/demo/demo1.html)。
 ```html
 <div class="box">
 	<div class="left">left</div>
