@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box {
+			display: flex;
+			height: 200px;
+			margin-bottom: 30px;
+		}
+		.left {
+			background-color: yellow;
+			flex-basis: 200px;
+			/* flex-basis定义该项目在分配主轴空间之前提前获得200px的空间 */
+			flex-grow: 0;
+			/* flex-grow定义该项目不分配剩余空间 */
+		}
+		.main {
+			background-color: green;
+			flex-grow: 1;
+			/* flex-grow定义main占满剩余空间 */
+		}
+		.right {
+			background-color: blue;
+			flex-basis: 100px;
+			flex-grow: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left">left</div>
+		<div class="main">main</div>
+	</div>
+	<div class="box">
+		<div class="left">left</div>
+		<div class="main">main</div>
+		<div class="right">right</div>
+	</div>
+</body>
+</html>

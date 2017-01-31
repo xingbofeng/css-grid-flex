@@ -1,31 +1,6 @@
 # 轴线与网格
 
-最近在深入研究CSS的布局方式的过程中的一些总结。主要是对于CSS3标准里的`flex`布局方式CSS4草案中的`grid`布局方式进行一些总结。
-
-由于内容还是蛮多的，所以分成几篇文章归纳。
-
-而**grid与flex介绍（轴线与网格）**这篇文章着重于介绍`grid`与`flex`布局的由来，以及一些初级的储备知识。
-
-<!--more-->
-### 为什么想写这系列的博文？
-现今的前端开发中，页面布局主要以基于盒模型的布局方式，也就是常说的`div`+`css`。
-我们通过`display`、`float`、`position`布局页面。
-
-传统页面布局过于繁琐，代码冗余，一些功能不易于简单实现：例如垂直居中、等分宽高等。
-### 为什么是“拥抱未来”？
-`flex`布局又称`弹性盒子`布局，它于2009年提出，并已经进入CSS3标准。现今虽已得到众高端浏览器厂商的支持，但由于IE10以下的用户基数仍然很大，大部分Web开发者并不能够真正在某种程度上大胆尝试这种新型布局理念。
-
-而`grid`布局则更加新奇了，甚至说到今天，连chrome这样的现代化浏览器都没有支持它。
-
-那为什么要谈它呢？
-
-`grid`布局是2010年由`Microsoft`提出的，**目前已经成为W3C候选标准**。虽然说我们依旧不能够通过正常方式使用这样的布局方式，但我们还是通过浏览器的设置可以看到相关的效果。比如Chrome浏览器中通过`chrome://flags`打开Chrome浏览器实验网络平台功能。，将`experimental web platform features`选项设置为`enable`，这个方法同样适用于 Opera，对于Oprea来说，地址为`opera://flags`。
-
-![image](http://oczira72b.bkt.clouddn.com/grid-flex-1.jpg)
-
-打开后，我们将能够在浏览器中正常使用`grid`的布局方式了。
-
-若要在项目当中使用`grid`布局方式，则可能需要安装[css-grid-polyfill](https://github.com/FremyCompany/css-grid-polyfill)。
+**grid与flex介绍（轴线与网格）**这篇文章着重于介绍`grid`与`flex`布局的由来，以及一些初级的储备知识。
 
 ### 容器的声明
 任何容器，我们均可以将它指定为`flex`布局方式或`grid`布局方式。
@@ -37,7 +12,6 @@
 
 ### flex与grid的轴线与网格
 #### flex的轴线
-以下内容参考至阮一峰老师的[flex布局教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)：
 
 采用`flex`布局的元素，称为**flex容器（flex container）**。它的所有子元素自动成为容器成员，称为**flex项目（flex item）**。
 
@@ -60,3 +34,7 @@
 ![image](http://oczira72b.bkt.clouddn.com/flex-grid-4.png)
 
 有了这些基本概念，我们能更好的地理解`flex`与`gird`布局了。
+
+参考资料：
+
+[flex布局教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)

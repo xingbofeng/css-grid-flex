@@ -3,11 +3,7 @@
 上一篇博文里主要讲述了`grid`与`flex`中，网格与轴线的基本概念，了解了这些基本概念之后，我们可以更轻松地对布局方式进行研究，这一篇文章主要描述`flex`布局中，容器与项目的相关API。
 
 本篇文章是依据我个人的所学所知，且部分参考国内外优秀的`flex布局`的相关文献总结而得。
-其参考资料有：
-* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [flexbox-CSS3弹性盒模型flexbox完整版教程](http://caibaojian.com/flexbox-guide.html)
-* [w3cplus：一个完整的Flexbox指南](http://www.w3cplus.com/css3/a-guide-to-flexbox.html)
-* [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
 ## 定义在容器的属性
 ### disaplay
 `display`属性定义了一个弹性盒子容器，容器是展现为行内或块状由所给定的值而决定，此时，他的所有子元素进入flex文档流，称为伸缩项目。
@@ -170,7 +166,7 @@
     flex-basis: <length> | auto; /* default auto */
 }
 ```
-利用`flex-basis`，我们可以很容易实现页面布局中的常见问题：两栏/三栏布局。
+利用`flex-basis`，我们可以很容易实现页面布局中的常见问题：[两栏/三栏布局](../demo/demo1.html)。
 ```html
 <div class="box">
 	<div class="left">left</div>
@@ -219,3 +215,10 @@
 
 ```
 ![image](http://oczira72b.bkt.clouddn.com/grid-flex-14.jpg)
+
+参考资料：
+
+* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [flexbox-CSS3弹性盒模型flexbox完整版教程](http://caibaojian.com/flexbox-guide.html)
+* [w3cplus：一个完整的Flexbox指南](http://www.w3cplus.com/css3/a-guide-to-flexbox.html)
+* [Flex 布局教程：语法篇](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
