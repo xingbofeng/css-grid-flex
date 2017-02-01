@@ -53,5 +53,5 @@
 
 参考资料：
 
-[flex布局教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
-[A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [flex布局教程](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+* [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
