@@ -190,7 +190,7 @@ main {
 
 ![image](http://oczira72b.bkt.clouddn.com/grid-flex-21.jpg)
 
-![image](http://oczira72b.bkt.clouddn.com/grid-flex-22.jpg)
+![image](http://oczira72b.bkt.clouddn.com/grid-flex-24.jpg)
 
 ```html
 <h1>10个</h1>
@@ -224,7 +224,7 @@ main {
 }
 ```
 
-## [结合响应式布局的综合运用](http://www.xingbofeng.com/css-grid-flex/demo/demo5.html)
+## [结合响应式布局的综合运用](http://www.xingbofeng.com/css-grid-flex/demo/demo6.html)
 
 这是一道来自[百度前端技术学院-task10：Flexbox 布局练习](http://ife.baidu.com/2016/task/detail?taskId=10)的习题，实现以下布局方式：
 
