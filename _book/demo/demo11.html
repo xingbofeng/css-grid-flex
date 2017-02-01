@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>grid 圣杯布局</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.grid {
+			display: grid;
+			width: 100vw;
+			height: 100vh;
+			grid-template-columns: 80px 1fr 1fr 1fr 80px;
+			grid-template-rows: 80px 1fr 1fr 80px;
+			grid-template-areas: 'title title title title title'
+						 		 'nav main main main aside'
+						 		 'nav main main main aside'
+						 		 'footer footer footer footer footer';
+			font-size: 30px;
+			text-align: center;
+		}
+		.title {
+			grid-area: title;
+			background-color: blue;
+		}
+		.nav {
+			grid-area: nav;
+			background-color: yellow;
+		}
+		.main {
+			grid-area: main;
+			background-color: gray;
+		}
+		.aside {
+			grid-area: aside;
+			background-color: green;
+		}
+		.footer {
+			grid-area: footer;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<section class="grid">
+		<div class="title">title</div>
+		<div class="nav">nav</div>
+		<div class="main">main</div>
+		<div class="aside">aside</div>
+		<div class="footer">footer</div>
+	</section>
+</body>
+</html>
