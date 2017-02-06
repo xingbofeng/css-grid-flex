@@ -34,5 +34,9 @@ git clone https://github.com/xingbofeng/css-grid-flex.git
 
 若要在项目当中使用`grid`布局方式，则可能需要安装[css-grid-polyfill](https://github.com/FremyCompany/css-grid-polyfill)。
 
+## 鸣谢
+感谢以下朋友对本仓库错误的纠正与贡献
+* [spademan](https://github.com/spademan)
+
 ## LICENSE
 本项目采用宽泛的[MIT LICENSE](https://github.com/xingbofeng/css-grid-flex/blob/master/LICENSE)，您可以随意转载本项目，只需要保持署名即可。
