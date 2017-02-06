@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gridtest</title>
+	<style>
+		* {
+			margin:0;
+			padding: 0;
+		}
+
+		.box{
+			display: grid;
+			width: 100vw;
+			height: 100vh;
+			grid-template-columns:80px 1fr 1fr 1fr 80px;
+			grid-template-rows:80px 1fr 1fr 80px;
+			grid-template-areas:'title title title title title '
+								'nav main main main aside'
+								'nav main main main aside'
+								'footer footer footer footer footer';
+			font-size: 30px;
+			text-align: center;
+		}
+
+		header{
+			grid-area:title;
+			background-color: blue;
+		}
+		nav{
+			grid-area:nav;
+			background-color: red;
+		}
+
+		main{
+			grid-area:main;
+			background-color: gray;
+		}
+
+		aside{
+			grid-area:aside;
+			background-color: yellow;
+		}
+
+		footer{
+			grid-area:footer;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<header>header</header>
+		
+			<main>main</main>
+			<nav>nav</nav>
+			<aside>aside</aside>
+
+		<footer>footer</footer>
+	</div>
+</body>
+</html>
