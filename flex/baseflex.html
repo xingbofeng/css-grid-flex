@@ -1,0 +1,547 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>flex基础语法介绍 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="useflex.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <a target="_blank" href="http://www.angryzhangzhe.cn">
+            
+                    
+                    Blog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://github.com/xingbofeng/css-grid-flex">
+            
+                    
+                    本书GitHub地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    拥抱未来的CSS布局方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../line-box.html">
+            
+                <a href="../line-box.html">
+            
+                    
+                    轴线与网格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    flex
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="baseflex.html">
+            
+                <a href="baseflex.html">
+            
+                    
+                    flex基础语法介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="useflex.html">
+            
+                <a href="useflex.html">
+            
+                    
+                    flex的相关应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../grid/">
+            
+                <a href="../grid/">
+            
+                    
+                    grid
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../grid/grid-1.html">
+            
+                <a href="../grid/grid-1.html">
+            
+                    
+                    grid基础语法介绍(容器篇)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../grid/grid-2.html">
+            
+                <a href="../grid/grid-2.html">
+            
+                    
+                    grid基础语法介绍(项目篇)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../grid/usegrid.html">
+            
+                <a href="../grid/usegrid.html">
+            
+                    
+                    grid的相关应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >flex基础语法介绍</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="flex&#x57FA;&#x7840;&#x8BED;&#x6CD5;&#x4ECB;&#x7ECD;">flex&#x57FA;&#x7840;&#x8BED;&#x6CD5;&#x4ECB;&#x7ECD;</h1>
+<p>&#x300A;&#x8F74;&#x7EBF;&#x4E0E;&#x7F51;&#x683C;&#x300B;&#x91CC;&#x4E3B;&#x8981;&#x8BB2;&#x8FF0;&#x4E86;<code>grid</code>&#x4E0E;<code>flex</code>&#x4E2D;&#xFF0C;&#x7F51;&#x683C;&#x4E0E;&#x8F74;&#x7EBF;&#x7684;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#xFF0C;&#x4E86;&#x89E3;&#x4E86;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x66F4;&#x8F7B;&#x677E;&#x5730;&#x5BF9;&#x5E03;&#x5C40;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x7814;&#x7A76;&#xFF0C;&#x8FD9;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E3B;&#x8981;&#x63CF;&#x8FF0;<code>flex</code>&#x5E03;&#x5C40;&#x4E2D;&#xFF0C;&#x5B9A;&#x4E49;&#x5728;&#x5BB9;&#x5668;&#x4E0E;&#x9879;&#x76EE;&#x7684;&#x76F8;&#x5173;&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#x662F;&#x4F9D;&#x636E;&#x6211;&#x4E2A;&#x4EBA;&#x7684;&#x6240;&#x5B66;&#x6240;&#x77E5;&#xFF0C;&#x4E14;&#x90E8;&#x5206;&#x53C2;&#x8003;&#x56FD;&#x5185;&#x5916;&#x4F18;&#x79C0;&#x7684;<code>flex&#x5E03;&#x5C40;</code>&#x7684;&#x76F8;&#x5173;&#x6587;&#x732E;&#x603B;&#x7ED3;&#x800C;&#x5F97;&#x3002;</p>
+<h2 id="&#x5B9A;&#x4E49;&#x5728;&#x5BB9;&#x5668;&#x7684;&#x5C5E;&#x6027;">&#x5B9A;&#x4E49;&#x5728;&#x5BB9;&#x5668;&#x7684;&#x5C5E;&#x6027;</h2>
+<h3 id="disaplay">disaplay</h3>
+<p><code>display</code>&#x5C5E;&#x6027;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x5F39;&#x6027;&#x76D2;&#x5B50;&#x5BB9;&#x5668;&#xFF0C;&#x5BB9;&#x5668;&#x662F;&#x5C55;&#x73B0;&#x4E3A;&#x884C;&#x5185;&#x6216;&#x5757;&#x72B6;&#x7531;&#x6240;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#x800C;&#x51B3;&#x5B9A;&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x4ED6;&#x7684;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x8FDB;&#x5165;flex&#x6587;&#x6863;&#x6D41;&#xFF0C;&#x79F0;&#x4E3A;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">display</span>: flex;
+}
+</code></pre>
+<p>&#x5B9A;&#x4E49;&#x884C;&#x5185;&#x5BB9;&#x5668;&#x7684;flex&#x5E03;&#x5C40;&#xFF1A;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">display</span>:inline-flex;
+}
+</code></pre>
+<p>&#x5BF9;&#x4E8E;safiri&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x9700;&#x8981;&#x52A0;&#x4E0A;<code>webkit</code>&#x524D;&#x7F00;&#xFF08;&#x4EE5;&#x524D;&#x9047;&#x5230;&#x8FC7;&#xFF0C;&#x6DF1;&#x5751;&#x554A;&#xFF01;&#xFF09;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">display</span>:webkit-flex;
+    <span class="hljs-attribute">display</span>:flex;
+}
+</code></pre>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x8BF7;&#x6CE8;&#x610F;&#x4EE5;&#x4E0B;&#x4E24;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>CSS&#x7684;columns&#x5728;&#x4F38;&#x7F29;&#x5BB9;&#x5668;&#x4E0A;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;</li>
+<li>float&#x3001;clear&#x548C;vertical-align&#x5728;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x4E0A;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;<h3 id="flex-direction">flex-direction</h3>
+<code>flex-direction</code>&#x5B9A;&#x4E49;&#x4E3B;&#x8F74;&#x7684;&#x65B9;&#x5411;&#x3002;&#x56E0;&#x4E3B;&#x8F74;&#x662F;&#x4E8C;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x77E2;&#x91CF;&#xFF0C;&#x56E0;&#x6B64;<code>flex-direction</code>&#x6709;&#x56DB;&#x4E2A;&#x503C;&#xFF0C;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x4E86;x&#x8F74;&#x4E0E;y&#x8F74;&#x7684;&#x6B63;&#x65B9;&#x5411;&#x4E0E;&#x53CD;&#x65B9;&#x5411;&#x3002;<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+  <span class="hljs-attribute">flex-direction</span>: row | row-reverse | column | column-reverse;
+}
+</code></pre>
+</li>
+</ul>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-5.jpg" alt="image"></p>
+<ul>
+<li><code>row</code>&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x4EE3;&#x8868;&#x4E3B;&#x8F74;&#x4E3A;&#x6C34;&#x5E73;&#x8F74;&#xFF0C;&#x65B9;&#x5411;&#x4E3A;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x3002;</li>
+<li><code>row-reverse</code>&#x4EE3;&#x8868;&#x4E3B;&#x8F74;&#x4E3A;&#x6C34;&#x5E73;&#x8F74;&#xFF0C;&#x65B9;&#x5411;&#x4E3A;&#x4ECE;&#x53F3;&#x5230;&#x5DE6;&#x3002;</li>
+<li><code>column</code>&#x4EE3;&#x8868;&#x4E3B;&#x8F74;&#x4E3A;&#x5782;&#x76F4;&#x8F74;&#xFF0C;&#x65B9;&#x5411;&#x4E3A;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x3002;</li>
+<li><code>column-reverse</code>&#x4EE3;&#x8868;&#x4E3B;&#x8F74;&#x4E3A;&#x5782;&#x76F4;&#x8F74;&#xFF0C;&#x65B9;&#x5411;&#x4E3A;&#x4ECE;&#x4E0B;&#x5230;&#x4E0A;&#x3002;</li>
+</ul>
+<h3 id="flex-wrap">flex-wrap</h3>
+<p><code>flex-wrap</code>&#x5B9A;&#x4E49;<code>flex&#x9879;&#x76EE;</code>&#x662F;&#x5426;&#x6362;&#x884C;&#x663E;&#x793A;&#x3002;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>flex&#x9879;&#x76EE;</code>&#x4F1A;&#x5C3D;&#x53EF;&#x80FD;&#x5730;&#x663E;&#x793A;&#x5728;&#x4E00;&#x884C;&#x5F53;&#x4E2D;&#xFF0C;&#x5373;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>nowarp</code>&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">flex-wrap</span>: nowrap | wrap | wrap-reverse;
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-6.jpg" alt="image"></p>
+<ul>
+<li><code>nowrap</code>&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x4EE3;&#x8868;&#x4E0D;&#x6362;&#x884C;&#x3002;</li>
+<li><code>wrap</code>&#x4EE3;&#x8868;&#x6362;&#x884C;&#xFF0C;&#x4F46;&#x9ED8;&#x8BA4;&#x4E3A;&#x7B2C;&#x4E00;&#x884C;&#x5728;&#x4E0A;&#x65B9;&#x3002;</li>
+<li><code>wrap-reverse</code>&#x4EE3;&#x8868;&#x6362;&#x884C;&#xFF0C;&#x4F46;&#x9ED8;&#x8BA4;&#x4E3A;&#x7B2C;&#x4E00;&#x884C;&#x5728;&#x4E0B;&#x65B9;&#x3002;</li>
+</ul>
+<h3 id="flex-flow">flex-flow</h3>
+<p><code>flex-flow</code>&#x662F;<code>flex-direction</code>&#x548C;<code>flex-wrap</code>&#x7684;&#x5408;&#x5E76;&#x5199;&#x6CD5;&#xFF0C;&#x5B83;&#x540C;&#x65F6;&#x5B9A;&#x4E49;&#x4E86;<code>&#x4E3B;&#x8F74;&#x65B9;&#x5411;</code>&#x4E0E;&#x5BB9;&#x5668;&#x5185;&#x9879;&#x76EE;&#x7684;<code>&#x6362;&#x884C;&#x65B9;&#x5F0F;</code>&#xFF0C;&#x5176;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>row nowarp</code></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">flex-flow</span>: &lt;&#x2018;flex-direction&#x2019;&gt; || &lt;&#x2018;flex-wrap&#x2019;&gt;;
+}
+</code></pre>
+<h3 id="justify-content">justify-content</h3>
+<p><code>justify-content</code>&#x5B9A;&#x4E49;&#x4E86;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;<code>justify-content</code>&#x53EA;&#x4F1A;&#x5728;&#x4E3B;&#x8F74;&#x9879;&#x76EE;&#x4ECD;&#x5177;&#x6709;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x65F6;&#x624D;&#x4F1A;&#x8D77;&#x4F5C;&#x7528;&#x3002;</p>
+<p>&#x5229;&#x7528;&#x6B64;API&#xFF0C;&#x6211;&#x4EEC;&#x4FBF;&#x80FD;&#x5F88;&#x5BB9;&#x6613;&#x5730;&#x5B9E;&#x73B0;&#xFF1A;<code>&#x7B49;&#x5206;&#x5BBD;&#x9AD8;</code>&#x4E86;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">justify-content</span>: flex-start | flex-end | center | space-between | space-around;
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-7.jpg" alt="image"></p>
+<ul>
+<li><code>flex-start</code>&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x5411;&#x8D77;&#x59CB;&#x65B9;&#x5411;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>flex-end</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x5411;&#x7ED3;&#x675F;&#x65B9;&#x5411;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>center</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>space-between</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x4E24;&#x7AEF;&#x5BF9;&#x9F50;&#xFF0C;&#x4F46;&#x7B2C;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>space-around</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x7B49;&#x5206;&#x95F4;&#x8DDD;&#xFF0C;&#x4F46;&#x7B2C;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x4E0E;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x8DDD;&#x79BB;&#x4E3B;&#x8F74;&#x7684;&#x4E24;&#x7AEF;&#x4FDD;&#x6301;&#x4E00;&#x5B9A;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x8FD9;&#x4E2A;&#x8DDD;&#x79BB;&#x4E3A;&#x9879;&#x76EE;&#x4E4B;&#x95F4;&#x95F4;&#x8DDD;&#x7684;1/2&#x3002;</li>
+</ul>
+<h3 id="align-items">align-items</h3>
+<p><code>align-items</code>&#x5B9A;&#x4E49;&#x4E86;&#x9879;&#x76EE;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x3002;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x60F3;&#x50CF;&#x6210;&#x4EA4;&#x53C9;&#x8F74;&#x7684;<code>justify-content</code>&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">align-items</span>: flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-8.jpg" alt="image"></p>
+<ul>
+<li><code>flex-start</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x5411;&#x8D77;&#x59CB;&#x65B9;&#x5411;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>flex-end</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x5411;&#x7ED3;&#x675F;&#x65B9;&#x5411;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>center</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>baseline</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x5411;&#x9879;&#x76EE;&#x7684;&#x7B2C;&#x4E00;&#x884C;&#x6587;&#x5B57;&#x7684;&#x57FA;&#x7EBF;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>stretch</code>&#x4EE3;&#x8868;&#x9879;&#x76EE;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x62C9;&#x4F38;&#x5BF9;&#x9F50;&#x3002;</li>
+</ul>
+<h3 id="align-content">align-content</h3>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x628A;&#x5BB9;&#x5668;&#x7684;<code>flex-warp</code>&#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;<code>warp</code>&#x6216;&#x8005;<code>warp-reverse</code>&#x65F6;&#xFF0C;&#x82E5;&#x9879;&#x76EE;&#x4E0D;&#x80FD;&#x5728;&#x4E00;&#x6839;&#x4E3B;&#x8F74;&#x4E0A;&#x663E;&#x793A;&#xFF0C;&#x5BB9;&#x5668;&#x4FBF;&#x4F1A;&#x51FA;&#x73B0;&#x591A;&#x6839;&#x4E3B;&#x8F74;&#x3002;</p>
+<p>&#x6B64;&#x65F6;&#x4FBF;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x503C;&#x6765;&#x5B9A;&#x4E49;&#x591A;&#x6839;&#x5E73;&#x884C;&#x8F74;&#x7EBF;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x4FBF;&#x662F;<code>align-content</code>&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">align-content</span>: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-9.jpg" alt="image"></p>
+<ul>
+<li><code>flex-start</code>&#x4EE3;&#x8868;&#x591A;&#x6761;&#x5E73;&#x884C;&#x7684;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>flex-end</code>&#x4EE3;&#x8868;&#x591A;&#x6761;&#x5E73;&#x884C;&#x7684;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>center</code>&#x4EE3;&#x8868;&#x591A;&#x6761;&#x5E73;&#x884C;&#x7684;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x5C45;&#x4E2D;&#x5BF9;&#x9F50;&#x3002;</li>
+<li><code>space-between</code>&#x4EE3;&#x8868;&#x591A;&#x6761;&#x5E73;&#x884C;&#x7684;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x4E24;&#x7AEF;&#x5BF9;&#x9F50;&#xFF0C;&#x4F46;&#x7B2C;&#x4E00;&#x6761;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x6761;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x3002;</li>
+<li><code>space-around</code>&#x4EE3;&#x8868;&#x591A;&#x6761;&#x5E73;&#x884C;&#x7684;&#x4E3B;&#x8F74;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x4E0A;&#x7B49;&#x5206;&#x95F4;&#x8DDD;&#xFF0C;&#x4F46;&#x7B2C;&#x4E00;&#x6761;&#x4E3B;&#x8F74;&#x4E0E;&#x6700;&#x540E;&#x4E00;&#x6761;&#x4E3B;&#x8F74;&#x8DDD;&#x79BB;&#x4E3B;&#x8F74;&#x7684;&#x4E24;&#x7AEF;&#x4FDD;&#x6301;&#x4E00;&#x5B9A;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x8FD9;&#x4E2A;&#x8DDD;&#x79BB;&#x4E3A;&#x5176;&#x5B83;&#x4E3B;&#x8F74;&#x4E4B;&#x95F4;&#x95F4;&#x8DDD;&#x7684;1/2&#x3002;</li>
+<li><code>stretch</code>&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x4EE3;&#x8868;&#x591A;&#x6761;&#x5E73;&#x884C;&#x7684;&#x4E3B;&#x8F74;&#x62C9;&#x4F38;&#x5BF9;&#x9F50;&#x3002;</li>
+</ul>
+<h2 id="&#x5B9A;&#x4E49;&#x5728;&#x9879;&#x76EE;&#x4E0A;&#x7684;&#x5C5E;&#x6027;">&#x5B9A;&#x4E49;&#x5728;&#x9879;&#x76EE;&#x4E0A;&#x7684;&#x5C5E;&#x6027;</h2>
+<h3 id="order">order</h3>
+<p><code>order</code>&#x5B9A;&#x4E49;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x7684;&#x6392;&#x5217;&#x987A;&#x5E8F;&#x3002;&#x6570;&#x503C;&#x8D8A;&#x5C0F;&#xFF0C;&#x6392;&#x5217;&#x8D8A;&#x9760;&#x524D;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0&#x3002;</p>
+<p>&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9879;&#x76EE;&#x5728;&#x4E3B;&#x8F74;&#x4E0A;&#x7684;&#x6392;&#x5217;&#x987A;&#x5E8F;&#x662F;&#x4F9D;&#x636E;&#x5B83;&#x4EEC;&#x5728;<code>HTML&#x6587;&#x6863;</code>&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x7684;&#x3002;&#x56E0;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63A7;&#x5236;&#x6587;&#x6863;&#x6D41;&#x7684;&#x5148;&#x540E;&#x987A;&#x5E8F;&#xFF0C;&#x6545;&#x6B64;API&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x4E0D;&#x592A;&#x666E;&#x904D;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+    <span class="hljs-attribute">order</span>: &lt;integer&gt;;
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-10.jpg" alt="image"></p>
+<h3 id="flex-grow">flex-grow</h3>
+<p><code>flex-grow</code>&#x5B9A;&#x4E49;&#x4E86;&#x9879;&#x76EE;&#x7684;&#x653E;&#x5927;&#x6BD4;&#x4F8B;&#x3002;&#x5982;&#x679C;&#x6240;&#x6709;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x7684;<code>flex-grow</code>&#x8BBE;&#x7F6E;&#x4E86;<code>1</code>&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4E2A;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x5C06;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E00;&#x4E2A;&#x5927;&#x5C0F;&#x76F8;&#x7B49;&#x7684;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7ED9;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x8BBE;&#x7F6E;&#x4E86;<code>flex-grow</code>&#x503C;&#x4E3A;<code>2</code>&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x6240;&#x5360;&#x7684;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x662F;&#x5176;&#x4ED6;&#x4F38;&#x7F29;&#x9879;&#x76EE;&#x6240;&#x5360;&#x5269;&#x4F59;&#x7A7A;&#x95F4;&#x7684;<code>&#x4E24;&#x500D;</code>&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8D1F;&#x503C;&#x5BF9;&#x8BE5;&#x5C5E;&#x6027;&#x65E0;&#x6548;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+    <span class="hljs-attribute">flex-grow</span>: &lt;number&gt;; <span class="hljs-comment">/* default 0 */</span>
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-11.jpg" alt="image"></p>
+<h3 id="flex-shrink">flex-shrink</h3>
+<p>&#x7C7B;&#x4F3C;&#x4E8E;<code>flex-grow</code>&#xFF0C;<code>flex-shrink</code>&#x5B9A;&#x4E49;&#x4E86;&#x9879;&#x76EE;&#x7684;&#x7F29;&#x5C0F;&#x6BD4;&#x4F8B;&#x3002;&#x5176;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>1</code>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6240;&#x6709;&#x9879;&#x76EE;&#x7684;<code>flex-shrink</code>&#x90FD;&#x4E3A;<code>1</code>&#xFF0C;&#x5F53;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x90FD;&#x5C06;&#x7B49;&#x6BD4;&#x4F8B;&#x7F29;&#x5C0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6240;&#x6709;&#x9879;&#x76EE;&#x90FD;&#x4E3A;<code>1</code>&#xFF0C;&#x4F46;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x7684;<code>flex-shrink</code>&#x4E3A;<code>0</code>&#xFF0C;&#x5373;&#x4EE3;&#x8868;&#x7A7A;&#x95F4;&#x4E0D;&#x8DB3;&#x65F6;&#xFF0C;&#x8BE5;&#x9879;&#x76EE;&#x7F29;&#x5C0F;0&#x500D;&#xFF0C;&#x5373;&#x4E3A;&#x4E0D;&#x7F29;&#x5C0F;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x8D1F;&#x503C;&#x5BF9;&#x8BE5;&#x5C5E;&#x6027;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#x3002;</p>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-12.jpg" alt="image"></p>
+<h3 id="flex-basis">flex-basis</h3>
+<p><code>flex-basis</code>&#x5B9A;&#x4E49;&#x4E86;&#x5728;&#x5206;&#x914D;&#x591A;&#x4F59;&#x7A7A;&#x95F4;&#x4E4B;&#x524D;&#xFF0C;&#x9879;&#x76EE;&#x5360;&#x636E;&#x7684;&#x4E3B;&#x8F74;&#x7A7A;&#x95F4;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x8BA1;&#x7B97;&#x4E3B;&#x8F74;&#x662F;&#x5426;&#x6709;&#x591A;&#x4F59;&#x7A7A;&#x95F4;&#x3002;&#x5B83;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>auto</code>&#xFF0C;&#x5373;&#x9879;&#x76EE;&#x7684;&#x672C;&#x6765;&#x5927;&#x5C0F;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+    <span class="hljs-attribute">flex-basis</span>: &lt;length&gt; | auto; <span class="hljs-comment">/* default auto */</span>
+}
+</code></pre>
+<p>&#x5229;&#x7528;<code>flex-basis</code>&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x5BB9;&#x6613;&#x5B9E;&#x73B0;&#x9875;&#x9762;&#x5E03;&#x5C40;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x95EE;&#x9898;&#xFF1A;<a href="http://www.xingbofeng.com/css-grid-flex/demo/demo1.html" target="_blank">&#x4E24;&#x680F;/&#x4E09;&#x680F;&#x5E03;&#x5C40;</a>&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;box&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;left&quot;</span>&gt;</span>left<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main&quot;</span>&gt;</span>main<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-css"><span class="hljs-selector-class">.box</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+}
+<span class="hljs-selector-class">.left</span> {
+    <span class="hljs-attribute">background-color</span>: yellow;
+    <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">200px</span>;
+    <span class="hljs-comment">/* flex-basis&#x5B9A;&#x4E49;&#x8BE5;&#x9879;&#x76EE;&#x5728;&#x5206;&#x914D;&#x4E3B;&#x8F74;&#x7A7A;&#x95F4;&#x4E4B;&#x524D;&#x63D0;&#x524D;&#x83B7;&#x5F97;200px&#x7684;&#x7A7A;&#x95F4; */</span>
+    <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-comment">/* flex-grow&#x5B9A;&#x4E49;&#x8BE5;&#x9879;&#x76EE;&#x4E0D;&#x5206;&#x914D;&#x5269;&#x4F59;&#x7A7A;&#x95F4; */</span>
+}
+<span class="hljs-selector-class">.main</span> {
+    <span class="hljs-attribute">background-color</span>: green;
+    <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-comment">/* flex-grow&#x5B9A;&#x4E49;main&#x5360;&#x6EE1;&#x5269;&#x4F59;&#x7A7A;&#x95F4; */</span>
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-13.jpg" alt="image"></p>
+<h3 id="flex">flex</h3>
+<p><code>flex</code>&#x662F;<code>flex-grow</code>&#x3001;<code>flex-shrink</code>&#x548C;<code>flex-basis</code>&#x7684;&#x7B80;&#x5199;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<code>0 1 auto</code>&#x3002;&#x540E;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x53EF;&#x9009;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+    <span class="hljs-attribute">flex</span>: none | [ &lt;<span class="hljs-string">&apos;flex-grow&apos;</span>&gt; &lt;<span class="hljs-string">&apos;flex-shrink&apos;</span>&gt;? || &lt;<span class="hljs-string">&apos;flex-basis&apos;</span>&gt; ]
+}
+</code></pre>
+<h3 id="align-self">align-self</h3>
+<p><code>align-self</code>&#x5B9A;&#x4E49;&#x4E86;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#x4E0A;&#x5728;&#x4EA4;&#x53C9;&#x8F74;&#x7684;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#x3002;
+&#x5176;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x7EE7;&#x627F;&#x5BB9;&#x5668;&#x7684;<code>align-items</code>&#x5C5E;&#x6027;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x53C2;&#x9605;<code>align-items</code>&#x7684;&#x5C5E;&#x6027;&#x503C;&#x3002;</p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+    <span class="hljs-attribute">align-self</span>: auto | flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre>
+<p><img src="http://oczira72b.bkt.clouddn.com/grid-flex-14.jpg" alt="image"></p>
+<p>&#x53C2;&#x8003;&#x8D44;&#x6599;&#xFF1A;</p>
+<ul>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">A Complete Guide to Flexbox</a></li>
+<li><a href="http://caibaojian.com/flexbox-guide.html" target="_blank">flexbox-CSS3&#x5F39;&#x6027;&#x76D2;&#x6A21;&#x578B;flexbox&#x5B8C;&#x6574;&#x7248;&#x6559;&#x7A0B;</a></li>
+<li><a href="http://www.w3cplus.com/css3/a-guide-to-flexbox.html" target="_blank">w3cplus&#xFF1A;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;Flexbox&#x6307;&#x5357;</a></li>
+<li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank">Flex &#x5E03;&#x5C40;&#x6559;&#x7A0B;&#xFF1A;&#x8BED;&#x6CD5;&#x7BC7;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: flex">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="useflex.html" class="navigation navigation-next " aria-label="Next page: flex的相关应用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"flex基础语法介绍","level":"1.5.1","depth":2,"next":{"title":"flex的相关应用","level":"1.5.2","depth":2,"path":"flex/useflex.md","ref":"flex/useflex.md","articles":[]},"previous":{"title":"flex","level":"1.5","depth":1,"path":"flex/README.md","ref":"flex/README.md","articles":[{"title":"flex基础语法介绍","level":"1.5.1","depth":2,"path":"flex/baseflex.md","ref":"flex/baseflex.md","articles":[]},{"title":"flex的相关应用","level":"1.5.2","depth":2,"path":"flex/useflex.md","ref":"flex/useflex.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"flex/baseflex.md","mtime":"2017-02-23T05:44:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-23T09:49:45.388Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
