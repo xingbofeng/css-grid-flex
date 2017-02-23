@@ -37,6 +37,7 @@ git clone https://github.com/xingbofeng/css-grid-flex.git
 ## 鸣谢
 感谢以下朋友对本仓库错误的纠正与贡献
 * [spademan](https://github.com/spademan)
+* [klren0312](https://github.com/klren0312)
 
 ## LICENSE
 本项目采用宽泛的[MIT LICENSE](https://github.com/xingbofeng/css-grid-flex/blob/master/LICENSE)，您可以随意转载本项目，只需要保持署名即可。

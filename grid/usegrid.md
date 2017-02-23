@@ -100,48 +100,48 @@
 ```
 
 ```css
-		* {
-			margin:0;
-			padding: 0;
-		}
+* {
+	margin:0;
+	padding: 0;
+}
 
-		.box{
-			display: grid;
-			width: 100vw;
-			height: 100vh;
-			grid-template-columns:80px 1fr 1fr 1fr 80px;
-			grid-template-rows:80px 1fr 1fr 80px;
-			grid-template-areas:'title title title title title '
-								'nav main main main aside'
-								'nav main main main aside'
-								'footer footer footer footer footer';
-			font-size: 30px;
-			text-align: center;
-		}
+.box{
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns:80px 1fr 1fr 1fr 80px;
+	grid-template-rows:80px 1fr 1fr 80px;
+	grid-template-areas:'title title title title title '
+						'nav main main main aside'
+						'nav main main main aside'
+						'footer footer footer footer footer';
+	font-size: 30px;
+	text-align: center;
+}
 
-		header{
-			grid-area:title;
-			background-color: blue;
-		}
-		nav{
-			grid-area:nav;
-			background-color: red;
-		}
+header{
+	grid-area:title;
+	background-color: blue;
+}
+nav{
+	grid-area:nav;
+	background-color: red;
+}
 
-		main{
-			grid-area:main;
-			background-color: gray;
-		}
+main{
+	grid-area:main;
+	background-color: gray;
+}
 
-		aside{
-			grid-area:aside;
-			background-color: yellow;
-		}
+aside{
+	grid-area:aside;
+	background-color: yellow;
+}
 
-		footer{
-			grid-area:footer;
-			background-color: green;
-		}
+footer{
+	grid-area:footer;
+	background-color: green;
+}
 ```
 
 这里就简单举了几个较为常见的例子加以说明。俗话说：纸上得来终觉浅，绝知此事要躬行。所有代码都是我个人亲手码的，在真正实践探索中慢慢也就能掌握了。
