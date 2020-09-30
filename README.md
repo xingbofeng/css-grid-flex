@@ -41,3 +41,16 @@ git clone https://github.com/xingbofeng/css-grid-flex.git
 
 ## LICENSE
 本项目采用宽泛的[MIT LICENSE](https://github.com/xingbofeng/css-grid-flex/blob/master/LICENSE)，您可以随意转载本项目，只需要保持署名即可。
+
+
+Animation using CSS can be overwhelming to learn all at once.
+
+This book gives you a solid introduction to the topic, combining theory with practical lessons. You’ll learn how, and why to use animation on your web pages and hopefully be inspired to try it on your own projects!
+
+Contributing
+
+I love to get feedback, even if it's just to helpfully point out a typo!
+
+https://css-tricks.com/css-grid-replace-flexbox/
+https://www.w3schools.com/css/css3_flexbox.asp
+http://flexboxgrid.com/
