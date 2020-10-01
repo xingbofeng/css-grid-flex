@@ -1,6 +1,6 @@
-# 拥抱未来的CSS布局方式：flex与grid布局
+# 拥抱未来的CSS布局方式：Flex与Grid布局
 
-本系列文章为对`CSS`中`flex`布局与`grid`布局的详细介绍，已在[GitHub](https://github.com/xingbofeng/css-grid-flex)同步更新，如您在阅读过程中发现描述有误或错别字的情况，您可以向[本项目](https://github.com/xingbofeng/css-grid-flex)提出`issus`或`Pull Request`。
+本系列文章为对`CSS`中`Flex`布局与`grid`布局的详细介绍，已在[GitHub](https://github.com/xingbofeng/css-grid-flex)同步更新，如您在阅读过程中发现描述有误或错别字的情况，您可以向[本项目](https://github.com/xingbofeng/css-grid-flex)提出`issus`或`Pull Request`。
 
 本系列文章为我在深入研究CSS的布局方式的过程中的一些总结。主要是对于CSS3标准里的`flex`布局方式CSS4草案中的`grid`布局方式进行一些总结。
 
